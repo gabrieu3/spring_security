@@ -1,0 +1,15 @@
+Spring Security
+
+Quando o usuário solicita acesso a API pela primeira vez, o Spring segue o seguinte caminho:
+
+    --Usuário está autenticado?
+    Pergunta? Usuário -> Authentication Filter -> Security Context
+    Resposta do Security Context: Não
+
+    --Solicitar as credenciais.
+
+    --Verificar as Credenciais
+    Pergunta? Usuário -> Authentication Filter -> Authentication Manager -> Authentication Provider -> User Details
+
+Quando o usuário seleciona a API depois de autenticado?
+    O navegador armazena no COOKIE.
